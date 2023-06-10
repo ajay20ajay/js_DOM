@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./at.css">
+</head>
+<body>
+    
+    <p id="text">Q1: Write a code to access element which is having id as "text" </p>
+    <h3>Answer:-</h3>
+    <pre>
+        var ab=document.getElementById("text")
+        console.log(ab)
+    </pre>
+    <hr>
+
+
+    <p>Q2:Write a code to access element which is having tag as "h1" </p>
+    <h3>Answer:-</h3>
+    <pre>
+        var a2=document.getElementsByTagName("p")
+        console.log(a2[1])
+    </pre>
+   <hr>
+
+<p class="box">Q3:Write a code to access element which is having class as "box" </p>
+<h3>Answer:-</h3>
+<pre>
+    var a3=document.getElementsByClassName("box")
+    console.log(a3[0])
+</pre>
+<hr>
+
+   
+    <p>Q4:<h1 id="q4">Hello</h1>
+        change the heading from "Hello" to "Hello World" using dom function </p>
+   
+    <h3>Answer:-</h3>
+    <pre>
+        var a4=document.getElementById("q4")
+        a4.addEventListener('click',()=>{
+           a4.innerHTML="Hello World"
+        })
+    </pre>
+<hr>
+
+
+
+<p>Q5: Create an HTML page having content as Hello World and a button named replace text . when user
+    will click on this button page content should be changed to "welcome to elevation Academy"</p>
+    <h4>Hellow World</h4>
+<h3>Answer:-</h3>
+<button onclick="q5()">replace text</button>
+<pre>  
+   
+</pre>   
+<hr>
+
+
+<p>Q6:
+   Add one style attribute and give text color as red and id attribute and given the id
+   value as "heading" in the above given h1 tag using DOM function 
+</p>
+<h1 id="heading">Hello</h1>
+<h3>Answer:-</h3>
+<pre>
+    </pre>
+<hr>
+
+
+    <p>Q7: Create three card HTML page and arrange them using flex property in row or horizontal
+        and also create button at bottom named "change flex direction" when user click on this button , the card arrangement 
+    should be changed to vertical direction  </p>
+    <pre>
+        <button onclick="changeDirection()">change direction</button>
+  <div class="parent">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+  </div>
+    </pre>
+<hr>
+
+
+
+
+    <p>Q8:Difference between window vs document? </p>
+    <h3>Answer:-</h3>
+    <table border="1">
+       <tr>
+        <th>Window</th>
+        <th>Document</th>
+       </tr>
+
+       <tr>
+        <ul>
+        <th><li> The window is at a root/top level at the JavaScript
+            object hierarchy. It  is a global/root object in
+            JavaScript and it is the root object of the Document object model(DOM);
+        </li> </th>
+        <th> <li> A document is an object inside the window object and we use a
+             document object for manipulation inside the document.</th>
+            </li></tr>
+    </ul>
+       <tr>
+        <th> <li> You can access it as window</li>.</th>
+        <th> <li>as document.property.</li> </th>
+       </tr>
+     </table>
+    <hr>
+
+
+    <p>Q9: write code to implement timer clock using JS -- display HH:MM:SS-- the time should keep updating every second </p>
+    <h1>Time</h1>
+    <h1></h1>
+    <hr>
+
+  
+
+  <hr>
+    <p>Q10: game</p>
+
+
+
+    <header>
+        <h6>Guess My Number!</h6>
+        <p class="between">(Between 1 and 100)</p>
+        <button class="btn again" onclick="reloadgame()"> Play Again</button>
+        <div class="number">No</div>
+      </header>
+      <main>
+        <section class="left">
+          <input type="number" class="guess" id="guessid" />
+          <button class="btn check" onclick="maincheck()">Check!</button>
+        </section>
+        <section class="right">
+          <p class="message" id="sc">Start guessing...</p>
+          <p class="label-score">💯 Chances: <span class="score">100</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </section>
+      </main>
+
+    <script src="./at.js"></script>
+</body>
+</html>
