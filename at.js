@@ -1,6 +1,6 @@
 //q1
 var ab=document.getElementById("text")
-console.log(ab)
+console.log(ab.innerText)
 
 
 
@@ -8,14 +8,14 @@ console.log(ab)
 //q2
 
 var a2=document.getElementsByTagName("p")
-console.log(a2[1])
 
+console.log(a2[1].innerText)
 
 
 //q3
 
 var a3=document.getElementsByClassName("box")
-console.log(a3[0])
+console.log(a3[0].innerText)
 
 
 
